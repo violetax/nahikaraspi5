@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inicio :: Documentación en español</title>
+    <link>http://localhost:1313/index.html</link>
+    <description>Bienvenida a naikaraspi5, un ejemplo de página web estática creada con Hugo. 🚀✨</description>
+    <generator>Hugo</generator>
+    <language>es-ES</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Flujo de trabajo</title>
+      <link>http://localhost:1313/flujo_de_trabajo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/flujo_de_trabajo/index.html</guid>
+      <description>Objetivo Montar una Raspberry Pi 5 preparada para desarrollar un sitio web con Hugo, administrarla remotamente mediante SSH y publicarla en GitHub y Netlify.&#xA;1. Montar la Raspberry Pi Montar el hardware:&#xA;Raspberry Pi 5 SSD NVMe o microSD HAT (si procede) disipador ventilador caja fuente de alimentación 2. Preparar Windows En el ordenador desde el que se administrará la Raspberry:</description>
+    </item>
+    <item>
+      <title>Componentes de una Raspberry Pi 5</title>
+      <link>http://localhost:1313/componentes/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/index.html</guid>
+      <description>Decomponiendo por partes:</description>
+    </item>
+    <item>
+      <title>Instalación</title>
+      <link>http://localhost:1313/instalacion/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/instalacion/index.html</guid>
+      <description>Montaje e instalación de la Raspberry Pi 5</description>
+    </item>
+    <item>
+      <title>SSH</title>
+      <link>http://localhost:1313/ssh/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ssh/index.html</guid>
+      <description>QUÉ ES SSH (Secure Shell) es un protocolo.**&#xA;Un protocolo es un sistema de normas que regulan la comunicación entre dos o más sistemas.&#xA;Permite CONECTARSE DE FORMA SEGURA A OTRO ORDENADOR a través de una red para administrarlo como si estuvieras delante de él.&#xA;Con SSH puedes:&#xA;iniciar sesión en otro equipo; ejecutar comandos; copiar archivos; administrar el sistema de forma remota. SSH cifra toda la comunicación entre ambos equipos, de modo que nadie puede leer ni modificar los datos durante la conexión.</description>
+    </item>
+    <item>
+      <title>Tailscale</title>
+      <link>http://localhost:1313/tailscale/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tailscale/index.html</guid>
+      <description>QUÉ ES Tailscale es un programa.&#xA;Es un programa que CONECTA DE FORMA SEGURA tus dispositivos (ordenador, Raspberry Pi, móvil, tablet…) a través de Internet.&#xA;Para que puedan comunicarse entre sí como si estuvieran conectados al mismo router de casa, aunque cada uno esté en un lugar distinto.&#xA;Dicho en lenguaje técnico:&#xA;Tailscale es una VPN de malla (mesh VPN) que crea una red privada segura entre tus dispositivos a través de Internet.</description>
+    </item>
+  </channel>
+</rss>

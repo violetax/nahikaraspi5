@@ -1,0 +1,143 @@
+[Reading-direction]
+other = "ltr"
+
+[Versioning-warning]
+other = 'Orrialde honek {{.pageVersion.title}} bertsioa erakusten du. Uneko bertsioa <a href="{{.latestUrl}}">hemen</a> aurki dezakezu.'
+
+[Search]
+other = "Bilatu"
+
+[Search-placeholder]
+other = "Bilatu..."
+
+[Clear-search]
+other = "Garbitu bilaketa"
+
+[No-results-found]
+other = "Ez da emaitzarik aurkitu \"{0}\" bilaketarako"
+
+[N-results-found]
+other = "\"{0}\" bilaketarako {1} emaitza aurkitu dira"
+
+[Clear-History]
+other = "Garbitu historia"
+
+[Reset-view]
+other = "Berrezarri ikuspegia"
+
+[View-reset]
+other = "Ikuspegia berrezarri da!"
+
+[Attachments-label]
+other = "Eranskinak"
+
+[title-404]
+other = "Ez da aurkitu"
+
+[message-404]
+other = "Ai! Badirudi orrialde hau ez dela existitzen ¯\\_(ツ)_/¯."
+
+[Go-to-homepage]
+other = "Hasierara joan"
+
+[home-button]
+other = "Kaixo!"
+
+[Edit-this-page]
+other = "Editatu"
+
+[Show-Markdown]
+other = "Erakutsi Markdown"
+
+[Show-source]
+other = "Erakutsi iturburu-kodea"
+
+[Print-this-chapter]
+other = "Inprimatu kapitulu osoa"
+
+[More-action]
+other = "Gehiago"
+
+[shortcuts-menuTitle]
+other = "Gehiago"
+
+[Navigation-toggle]
+other = "Menua"
+
+[Toc-toggle]
+other = "Edukien taula"
+
+[Byte-symbol]
+other = "B"
+
+[Kilobyte-symbol]
+other = "KB"
+
+[Megabyte-symbol]
+other = "MB"
+
+[caution]
+other = "Kontuz"
+
+[important]
+other = "Garrantzitsua"
+
+[info]
+other = "Informazioa"
+
+[note]
+other = "Oharra"
+
+[tip]
+other = "Aholkua"
+
+[warning]
+other = "Abisua"
+
+[Copy-to-clipboard]
+other = "Kopiatu testua arbelera"
+
+[Copied-to-clipboard]
+other = "Testua arbelera kopiatu da!"
+
+[Copy-link-to-clipboard]
+other = "Kopiatu esteka arbelera"
+
+[Link-copied-to-clipboard]
+other = "Esteka arbelera kopiatu da!"
+
+[Chapter]
+other = "{{.}}. kapitulua"
+
+[Language]
+other = "Hizkuntza"
+
+[Theme]
+other = "Gaia"
+
+[Submenu]
+other = "{{.}} azpimenua"
+
+[Subsections]
+other = "{{.}} atalaren azpiatalak"
+
+[tags]
+other = "Etiketak"
+
+[tag]
+other = "Etiketa"
+
+[categories]
+other = "Kategoriak"
+
+[category]
+other = "Kategoria"
+
+[Details]
+other = "Xehetasunak"
+
+[Version]
+other = "Bertsioa"
+
+[Browser-unsupported-feature]
+other = "Arakatzaile honek ez du funtzio hau onartzen"

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSH :: Documentación en español</title>
+    <link>http://localhost:1313/ssh/index.html</link>
+    <description>QUÉ ES SSH (Secure Shell) es un protocolo.**&#xA;Un protocolo es un sistema de normas que regulan la comunicación entre dos o más sistemas.&#xA;Permite CONECTARSE DE FORMA SEGURA A OTRO ORDENADOR a través de una red para administrarlo como si estuvieras delante de él.&#xA;Con SSH puedes:&#xA;iniciar sesión en otro equipo; ejecutar comandos; copiar archivos; administrar el sistema de forma remota. SSH cifra toda la comunicación entre ambos equipos, de modo que nadie puede leer ni modificar los datos durante la conexión.</description>
+    <generator>Hugo</generator>
+    <language>es-ES</language>
+    <atom:link href="http://localhost:1313/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Generar claves SSH — Windows 10</title>
+      <link>http://localhost:1313/ssh/generar-claves-ssh-windows-10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ssh/generar-claves-ssh-windows-10/index.html</guid>
+      <description>Objetivo Generar un par de claves SSH Ed25519 que permitirá autenticarse en la Raspberry Pi sin introducir la contraseña en cada conexión.&#xA;Requisitos Windows 10. PowerShell. Cliente OpenSSH. Cómo cumplir los requisitos ¿Tengo PowerShell? Pulsa Inicio y escribe:</description>
+    </item>
+    <item>
+      <title>Generar claves SSH — iPad 11</title>
+      <link>http://localhost:1313/ssh/generar-claves-ssh-ipad-11/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ssh/generar-claves-ssh-ipad-11/index.html</guid>
+      <description>Objetivo Generar un par de claves SSH Ed25519 que permitirá autenticarse en la Raspberry Pi sin introducir la contraseña en cada conexión.&#xA;Requisitos iPad con iPadOS. Conexión a Internet. Una aplicación SSH. Cómo cumplir los requisitos ¿Tengo una aplicación SSH? Busca en la pantalla de inicio:</description>
+    </item>
+    <item>
+      <title>Generar claves SSH — iPhone 11</title>
+      <link>http://localhost:1313/ssh/generar-claves-ssh-iphone-11/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ssh/generar-claves-ssh-iphone-11/index.html</guid>
+      <description>Objetivo Generar un par de claves SSH Ed25519 que permitirá autenticarse en la Raspberry Pi sin introducir la contraseña en cada conexión.&#xA;Requisitos iPhone con iOS. Conexión a Internet. Una aplicación SSH. Cómo cumplir los requisitos ¿Tengo una aplicación SSH? Busca en la pantalla de inicio:</description>
+    </item>
+    <item>
+      <title>Copiar una clave pública a la Raspberry Pi 5</title>
+      <link>http://localhost:1313/ssh/copiar-clave-publica-a-raspberry-pi-5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ssh/copiar-clave-publica-a-raspberry-pi-5/index.html</guid>
+      <description>Objetivo Copiar la clave pública de un dispositivo (Windows, iPad, iPhone…) a la Raspberry Pi para que posteriormente pueda autorizarse y utilizarse para iniciar sesión mediante SSH.&#xA;Requisitos Raspberry Pi encendida. Servicio SSH funcionando. Disponer de una clave pública (*.pub) en el dispositivo cliente. Cómo cumplir los requisitos ¿Está funcionando SSH? En la Raspberry, abre una terminal y ejecuta:</description>
+    </item>
+    <item>
+      <title>Autorizar claves SSH — Raspberry Pi 5</title>
+      <link>http://localhost:1313/ssh/autorizar-claves-ssh-en-raspberry-pi-5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ssh/autorizar-claves-ssh-en-raspberry-pi-5/index.html</guid>
+      <description>Objetivo Permitir que uno o varios dispositivos (Windows, iPad, iPhone…) puedan iniciar sesión en la Raspberry Pi mediante SSH utilizando claves en lugar de una contraseña.&#xA;Requisitos Raspberry Pi con SSH instalado y funcionando. Al menos una clave pública (*.pub) generada en el dispositivo cliente. Cómo cumplir los requisitos ¿Está funcionando SSH? En la Raspberry, abre una terminal y ejecuta:</description>
+    </item>
+  </channel>
+</rss>

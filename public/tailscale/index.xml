@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tailscale :: Documentación en español</title>
+    <link>http://localhost:1313/tailscale/index.html</link>
+    <description>QUÉ ES Tailscale es un programa.&#xA;Es un programa que CONECTA DE FORMA SEGURA tus dispositivos (ordenador, Raspberry Pi, móvil, tablet…) a través de Internet.&#xA;Para que puedan comunicarse entre sí como si estuvieran conectados al mismo router de casa, aunque cada uno esté en un lugar distinto.&#xA;Dicho en lenguaje técnico:&#xA;Tailscale es una VPN de malla (mesh VPN) que crea una red privada segura entre tus dispositivos a través de Internet.</description>
+    <generator>Hugo</generator>
+    <language>es-ES</language>
+    <atom:link href="http://localhost:1313/tailscale/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalar Tailscale — Windows 10</title>
+      <link>http://localhost:1313/tailscale/instalar-tailscale-windows-10/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tailscale/instalar-tailscale-windows-10/index.html</guid>
+      <description>Instalar Tailscale Requisitos Windows 10. Conexión a Internet. Descargar Abrir:&#xA;https://tailscale.com/download&#xA;Descargar la versión para Windows.&#xA;Instalar Ejecutar el instalador.</description>
+    </item>
+    <item>
+      <title>Instalar Tailscale — Raspberry Pi 5</title>
+      <link>http://localhost:1313/tailscale/instalar-tailscale-raspberry-pi-5/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tailscale/instalar-tailscale-raspberry-pi-5/index.html</guid>
+      <description>Instalar Tailscale Requisitos Raspberry Pi OS instalado. Conexión a Internet. Usuario con permisos sudo. Instalar curl -fsSL https://tailscale.com/install.sh | sh Conectar el equipo sudo tailscale up Se mostrará una URL.</description>
+    </item>
+    <item>
+      <title>Instalar Tailscale — iPad 11</title>
+      <link>http://localhost:1313/tailscale/instalar-tailscale-ipad-11/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tailscale/instalar-tailscale-ipad-11/index.html</guid>
+      <description>Instalar Tailscale Requisitos iPad con iPadOS. Apple ID. Conexión a Internet. Instalar Abrir App Store.&#xA;Buscar:&#xA;Tailscale Instalar la aplicación oficial.&#xA;Iniciar sesión Abrir Tailscale.</description>
+    </item>
+    <item>
+      <title>Instalar Tailscale — iPhone 11</title>
+      <link>http://localhost:1313/tailscale/instalar-tailscale-iphone-11/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tailscale/instalar-tailscale-iphone-11/index.html</guid>
+      <description>Instalar Tailscale Requisitos iPhone con iOS. Apple ID. Conexión a Internet. Instalar Abrir App Store.&#xA;Buscar:&#xA;Tailscale Instalar la aplicación oficial.&#xA;Iniciar sesión Abrir Tailscale.</description>
+    </item>
+  </channel>
+</rss>

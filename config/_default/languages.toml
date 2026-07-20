@@ -1,0 +1,20 @@
+# El TITLE si es .Site.Params.title, va en params.toml; pero para sobreescribirlo por idioma, va aquí
+[es]
+contentDir = "content/es"
+locale = "es-ES"
+label = "Español"
+title = "Documentación en español"
+weight = 1
+
+[es.params]
+title = "Documentación en español"
+
+[eu]
+contentDir = "content/eu"
+locale = "eu-ES"
+label = "Euskara"
+title = "Dokumentazioa euskaraz"
+weight = 2
+
+[eu.params]
+title = "Dokumentazioa euskaraz"

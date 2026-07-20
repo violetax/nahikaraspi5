@@ -1,0 +1,29 @@
+<!--  Los archivos de imagen, en este caso PNG, pertenecen al directorio componentes (en terminología de Hugo, ese directorio es un branch bundle).
+	Y está encabezado por componentes/_index.md -->
+<!-- El siguiente código permite editar las imágenes para reducirlas a un tamaño adecuado -->
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+
+{{- $image := .Page.Resources.GetMatch $src -}}
+
+{{- if not $image -}}
+  {{- with .Page.Parent -}}
+    {{- $image = .Resources.GetMatch $src -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $image -}}
+  {{- $processed := .Resize "1200x webp q85 drawing" -}}
+
+  <figure class="imagen-componente">
+    <img
+      src="{{ $processed.RelPermalink }}"
+      width="{{ $processed.Width }}"
+      height="{{ $processed.Height }}"
+      alt="{{ $alt }}"
+      loading="lazy"
+      decoding="async">
+  </figure>
+{{- else -}}
+  {{- errorf "No se encontró la imagen %q, utilizada en %s" $src .Page.Path -}}
+{{- end -}}

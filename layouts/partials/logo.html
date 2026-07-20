@@ -1,0 +1,8 @@
+<!-- layouts/partials/logo.html -->
+<a id="logo" href='{{ (cond (and (ne .Site.Params.landingPageURL nil) (hugo.IsMultilingual)) .Site.Params.landingPageURL "/") }}'>
+  <div style="font-family: sans-serif; font-size: 22px; font-weight: bold; padding: 10px;">
+	  <!-- {{ .Site.Title }} -->
+	  {{ .Site.Params.title }}
+  </div>
+  <img src="/images/cumple16_NyJyOyM.jpg" alt="cumple16">
+</a>

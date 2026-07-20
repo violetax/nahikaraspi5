@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Componentes de una Raspberry Pi 5 :: Documentación en español</title>
+    <link>http://localhost:1313/componentes/index.html</link>
+    <description>Decomponiendo por partes:</description>
+    <generator>Hugo</generator>
+    <language>es-ES</language>
+    <atom:link href="http://localhost:1313/componentes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visión general</title>
+      <link>http://localhost:1313/componentes/compos1_vision_general/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos1_vision_general/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>El cerebro</title>
+      <link>http://localhost:1313/componentes/compos2_el_cerebro/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos2_el_cerebro/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RP1: controlador de entrada y salida</title>
+      <link>http://localhost:1313/componentes/compos3_rp1_controlador_entrada_y_salida/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos3_rp1_controlador_entrada_y_salida/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Todo lo eléctrico</title>
+      <link>http://localhost:1313/componentes/compos4_todo_lo_electrico/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos4_todo_lo_electrico/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Refrigeración y temperatura</title>
+      <link>http://localhost:1313/componentes/compos5_refrigeracion_y_temperatura/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos5_refrigeracion_y_temperatura/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Imagen y vídeo</title>
+      <link>http://localhost:1313/componentes/compos6_imagen_y_video/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos6_imagen_y_video/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cámaras</title>
+      <link>http://localhost:1313/componentes/compos7_camaras/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos7_camaras/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comunicaciones</title>
+      <link>http://localhost:1313/componentes/compos8_comunicaciones/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos8_comunicaciones/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Expansión</title>
+      <link>http://localhost:1313/componentes/compos9_expansion/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos9_expansion/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conectores de servicio</title>
+      <link>http://localhost:1313/componentes/compos10_conectores_de_servicio/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos10_conectores_de_servicio/index.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Almacenamiento</title>
+      <link>http://localhost:1313/componentes/compos11_almacenamiento/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/componentes/compos11_almacenamiento/index.html</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+{{- $pages := slice -}}
+
+{{- range .Site.RegularPages -}}
+  {{- $categories := slice -}}
+  {{- range .GetTerms "categories" -}}
+    {{- $categories = $categories | append .Title -}}
+  {{- end -}}
+
+  {{- $tags := slice -}}
+  {{- range .GetTerms "tags" -}}
+    {{- $tags = $tags | append .Title -}}
+  {{- end -}}
+
+  {{- $page := dict
+    "title"       .Title
+    "url"         .RelPermalink
+    "language"    .Language.Lang
+    "section"     .Section
+    "type"        .Type
+    "weight"      .Weight
+    "date"        .Date
+    "lastmod"     .Lastmod
+    "summary"     (.Summary | plainify)
+    "description" (.Description | plainify)
+    "content"     .Plain
+    "categories"  $categories
+    "tags"        $tags
+  -}}
+
+  {{- $pages = $pages | append $page -}}
+{{- end -}}
+
+{{- dict
+  "site" (dict
+    "title"    .Site.Title
+    "language" .Site.Language.Lang
+    "baseURL"  .Site.BaseURL
+  )
+  "pages" $pages
+  | jsonify
+-}}

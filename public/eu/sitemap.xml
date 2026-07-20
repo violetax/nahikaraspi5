@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/eu/categor%C3%ADas/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/categor%C3%ADas/index.html" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/categor%C3%ADas/index.html" />
+    <xhtml:link rel="alternate" hreflang="eu-ES" href="http://localhost:1313/eu/categor%C3%ADas/index.html" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/eu/etiquetas/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/etiquetas/index.html" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/etiquetas/index.html" />
+    <xhtml:link rel="alternate" hreflang="eu-ES" href="http://localhost:1313/eu/etiquetas/index.html" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/eu/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/index.html" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/index.html" />
+    <xhtml:link rel="alternate" hreflang="eu-ES" href="http://localhost:1313/eu/index.html" />
+  </url>
+</urlset>

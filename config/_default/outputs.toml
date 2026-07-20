@@ -1,0 +1,2 @@
+# [outputs] — ATT: porque el archivo ya se llama 'outputs', no necesita [label] porque se traduciría como filename.label
+  home = ["HTML", "RSS", "JSON"]

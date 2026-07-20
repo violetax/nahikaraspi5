@@ -1,0 +1,4 @@
+baseURL = "http://example.org/"
+defaultContentLanguage = "es"
+theme = "hugo-theme-relearn"
+title = "nahikaraspi5 Docs"

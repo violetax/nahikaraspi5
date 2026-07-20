@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/ssh/generar-claves-ssh-windows-10/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/index.html" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/index.html" />
+    <xhtml:link rel="alternate" hreflang="eu-ES" href="http://localhost:1313/eu/index.html" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/ssh/generar-claves-ssh-ipad-11/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos1_vision_general/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos2_el_cerebro/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/ssh/generar-claves-ssh-iphone-11/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/ssh/copiar-clave-publica-a-raspberry-pi-5/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/instalacion/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tailscale/instalar-tailscale-windows-10/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos3_rp1_controlador_entrada_y_salida/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/ssh/autorizar-claves-ssh-en-raspberry-pi-5/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tailscale/instalar-tailscale-raspberry-pi-5/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/ssh/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos4_todo_lo_electrico/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tailscale/instalar-tailscale-ipad-11/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos5_refrigeracion_y_temperatura/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tailscale/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos6_imagen_y_video/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/tailscale/instalar-tailscale-iphone-11/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos7_camaras/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos8_comunicaciones/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos9_expansion/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos10_conectores_de_servicio/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/componentes/compos11_almacenamiento/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/categor%C3%ADas/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/categor%C3%ADas/index.html" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/categor%C3%ADas/index.html" />
+    <xhtml:link rel="alternate" hreflang="eu-ES" href="http://localhost:1313/eu/categor%C3%ADas/index.html" />
+  </url>
+  <url>
+    <loc>http://localhost:1313/etiquetas/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://localhost:1313/etiquetas/index.html" />
+    <xhtml:link rel="alternate" hreflang="es-ES" href="http://localhost:1313/etiquetas/index.html" />
+    <xhtml:link rel="alternate" hreflang="eu-ES" href="http://localhost:1313/eu/etiquetas/index.html" />
+  </url>
+</urlset>
