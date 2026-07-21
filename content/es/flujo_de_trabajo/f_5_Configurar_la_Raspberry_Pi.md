@@ -134,7 +134,7 @@ ping -c 4 google.com
 - etc.
 
 ```bash
-sudo apt install -y git vim-gtk3 curl tree xclip terminator zip unzip
+sudo apt install -y git neovim curl tree xclip terminator zip unzip
 ```
 
 Comprobar Vim:
