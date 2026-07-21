@@ -126,6 +126,7 @@ ping -c 4 google.com
 
 7. Instalar las herramientas básicas:
 
+- Terminator
 - Git
 - Vim
 - Curl
@@ -133,7 +134,7 @@ ping -c 4 google.com
 - etc.
 
 ```bash
-sudo apt install -y git vim curl tree xclip
+sudo apt install -y git vim curl tree xclip terminator
 ```
 
 ---
