@@ -10,7 +10,7 @@
     <xhtml:link rel="alternate" hreflang="eu-ES" href="http://localhost:1313/eu/index.html" />
   </url>
   <url>
-    <loc>http://localhost:1313/flujo_de_trabajo/index.html</loc>
+    <loc>http://localhost:1313/componentes/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/ssh/generar-claves-ssh-ipad-11/index.html</loc>
@@ -19,19 +19,19 @@
     <loc>http://localhost:1313/componentes/compos1_vision_general/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/componentes/index.html</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/componentes/compos2_el_cerebro/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/ssh/generar-claves-ssh-iphone-11/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/montaje/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/ssh/copiar-clave-publica-a-raspberry-pi-5/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/instalacion/index.html</loc>
+    <loc>http://localhost:1313/flujo_de_trabajo/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/tailscale/instalar-tailscale-windows-10/index.html</loc>
@@ -46,9 +46,6 @@
     <loc>http://localhost:1313/tailscale/instalar-tailscale-raspberry-pi-5/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/ssh/index.html</loc>
-  </url>
-  <url>
     <loc>http://localhost:1313/componentes/compos4_todo_lo_electrico/index.html</loc>
   </url>
   <url>
@@ -58,7 +55,7 @@
     <loc>http://localhost:1313/componentes/compos5_refrigeracion_y_temperatura/index.html</loc>
   </url>
   <url>
-    <loc>http://localhost:1313/tailscale/index.html</loc>
+    <loc>http://localhost:1313/ssh/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/componentes/compos6_imagen_y_video/index.html</loc>
@@ -67,10 +64,16 @@
     <loc>http://localhost:1313/tailscale/instalar-tailscale-iphone-11/index.html</loc>
   </url>
   <url>
+    <loc>http://localhost:1313/tailscale/index.html</loc>
+  </url>
+  <url>
     <loc>http://localhost:1313/componentes/compos7_camaras/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/componentes/compos8_comunicaciones/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_1_montar_la_raspberry_pi/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/componentes/compos9_expansion/index.html</loc>
@@ -80,6 +83,42 @@
   </url>
   <url>
     <loc>http://localhost:1313/componentes/compos11_almacenamiento/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_2_preparar_windows/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_3_instalar_raspberry_pi_os/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_4_primer_acceso_por_ssh/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_5_configurar_la_raspberry_pi/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_6_instalar_tailscale_en_la_raspberry_pi/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_7_instalar_tailscale_en_windows/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_8_configurar_git_para_github/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_9_instalar_hugo/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_10_crear_el_sitio/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_11_crear_el_repositorio_en_github/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_12_publicar_con_netlify/index.html</loc>
+  </url>
+  <url>
+    <loc>http://localhost:1313/flujo_de_trabajo/f_13_verificar_el_flujo_completo/index.html</loc>
   </url>
   <url>
     <loc>http://localhost:1313/categor%C3%ADas/index.html</loc>

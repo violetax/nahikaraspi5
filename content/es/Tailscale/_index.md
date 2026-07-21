@@ -1,6 +1,6 @@
 ---
 title: "Tailscale"
-weight: 6
+weight: 7
 ---
 # QUÉ ES
 

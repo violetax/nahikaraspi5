@@ -8,13 +8,6 @@
     <language>es-ES</language>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Flujo de trabajo</title>
-      <link>http://localhost:1313/flujo_de_trabajo/index.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/flujo_de_trabajo/index.html</guid>
-      <description>Objetivo Montar una Raspberry Pi 5 preparada para desarrollar un sitio web con Hugo, administrarla remotamente mediante SSH y publicarla en GitHub y Netlify.&#xA;1. Montar la Raspberry Pi Montar el hardware:&#xA;Raspberry Pi 5 SSD NVMe o microSD HAT (si procede) disipador ventilador caja fuente de alimentación 2. Preparar Windows En el ordenador desde el que se administrará la Raspberry:</description>
-    </item>
-    <item>
       <title>Componentes de una Raspberry Pi 5</title>
       <link>http://localhost:1313/componentes/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -22,11 +15,18 @@
       <description>Decomponiendo por partes:</description>
     </item>
     <item>
-      <title>Instalación</title>
-      <link>http://localhost:1313/instalacion/index.html</link>
+      <title>Montaje</title>
+      <link>http://localhost:1313/montaje/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/instalacion/index.html</guid>
-      <description>Montaje e instalación de la Raspberry Pi 5</description>
+      <guid>http://localhost:1313/montaje/index.html</guid>
+      <description>Montaje de la Raspberry Pi 5</description>
+    </item>
+    <item>
+      <title>Flujo de trabajo</title>
+      <link>http://localhost:1313/flujo_de_trabajo/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/flujo_de_trabajo/index.html</guid>
+      <description>Objetivo Montar una Raspberry Pi 5 preparada para desarrollar un sitio web con Hugo, administrarla remotamente mediante SSH y publicarla en GitHub y Netlify.</description>
     </item>
     <item>
       <title>SSH</title>

@@ -17,11 +17,11 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Inicio",
-    "content": "Objetivo Montar una Raspberry Pi 5 preparada para desarrollar un sitio web con Hugo, administrarla remotamente mediante SSH y publicarla en GitHub y Netlify.\n1. Montar la Raspberry Pi Montar el hardware:\nRaspberry Pi 5 SSD NVMe o microSD HAT (si procede) disipador ventilador caja fuente de alimentación 2. Preparar Windows En el ordenador desde el que se administrará la Raspberry:\nGenerar claves SSH — Windows 10\ninstalar OpenSSH (si es necesario) generar un par de claves SSH Ed25519 Instalar Git Descarga Git desde:\nhttps://git-scm.com/downloads\nAcepta las opciones predeterminadas del instalador.\nComprobar:\ngit --version Instalar Windows Terminal (opcional) Abre Microsoft Store.\nBusca:\nWindows Terminal Pulsa Instalar.\nComprobar:\nwt Instalar Visual Studio Code (opcional) Descarga Visual Studio Code desde:\nhttps://code.visualstudio.com/\nAcepta las opciones predeterminadas del instalador.\nDurante la instalación es recomendable marcar:\nAdd “Open with Code” action Add to PATH Comprobar:\ncode --version Si el comando no funciona, reinicia la sesión de Windows y vuelve a intentarlo.\n3. Instalar Raspberry Pi OS Utilizar Raspberry Pi Imager.\nEn Edit Settings configurar, al menos:\nhostname usuario contraseña SSH autenticación mediante clave pública clave pública generada en Windows Wi-Fi (si procede) zona horaria distribución del teclado. 4. Primer acceso por SSH Desde Windows:\nssh usuario@hostname Comprobar que la autenticación mediante claves funciona correctamente.\n5. Configurar la Raspberry Pi Actualizar el sistema. sudo apt update sudo apt full-upgrade sudo reboot Comprobar: Usuario con permisos sudo groups Debe aparecer:\nsudo Si no aparece:\nsudo usermod -aG sudo \u003cusuario\u003e Cierra la sesión y vuelve a entrar.\nHostname hostname Debe aparecer el nombre elegido durante la instalación, por ejemplo:\nraspi5 Para cambiarlo:\nsudo raspi-config Ir a:\nSystem Options ↓ Hostname Fecha y hora Mostrar la fecha y la hora actuales:\ndate Comprueba que son correctas.\nZona horaria Comprobar la zona horaria Mostrar la configuración:\ntimedatectl Debe aparecer una línea similar a:\nTime zone: Europe/Madrid Para cambiarla:\nsudo raspi-config Ir a:\nLocalisation Options ↓ Timezone Almacenamiento Mostrar los dispositivos de almacenamiento:\nlsblk Mostrar el espacio disponible:\ndf -h Comprueba que:\naparece el SSD NVMe o la microSD esperados; el sistema ha arrancado desde el dispositivo correcto; hay suficiente espacio libre. Conexión a Internet. ping -c 4 google.com Instalar las herramientas básicas: Git Vim Curl Tree etc. sudo apt install -y git vim curl tree xclip 6. Instalar Tailscale en la Raspberry Pi Instalar Tailscale\nIniciar sesión.\nAutorizar el dispositivo.\nComprobar que aparece en la red Tailscale.\n7. Instalar Tailscale en Windows Instalar Tailscale\nIniciar sesión con la misma cuenta.\nComprobar que Windows y la Raspberry Pi pueden verse entre sí.\n8. Configurar Git para GitHub En la Raspberry:\nConfigurar user.name y user.email git config --global user.name \"Tu nombre\" git config --global user.email \"tu@email.com\" Generar un par de claves SSH propio ssh-keygen -t ed25519 -C \"tu@email.com\" Pulsa Enter para aceptar la ubicación por defecto.\nSi no deseas proteger la clave con una contraseña, pulsa Enter dos veces más.\nComprobar:\nls ~/.ssh Debe aparecer, al menos:\nid_ed25519 id_ed25519.pub Añadir la clave pública a GitHub. cat ~/.ssh/id_ed25519.pub | xclip En GitHub:\nSettings ↓ SSH and GPG keys ↓ New SSH key Pega la clave y guarda los cambios.\nComprobar que puede hacerse:\ngit clone git@github.com:... sin solicitar usuario ni contraseña.\n9. Instalar Hugo Descargar e instalar la versión oficial desde GitHub Releases.\nComprobar:\nhugo version 10. Crear el sitio Desde Windows, conectado mediante SSH a la Raspberry:\ncrear el sitio Hugo instalar el tema personalizar la configuración inicial comprobar que el sitio compila correctamente. 11. Crear el repositorio en GitHub crear un repositorio vacío conectar el repositorio local realizar el primer commit subir el proyecto. 12. Publicar con Netlify conectar Netlify con GitHub seleccionar el repositorio configurar el despliegue realizar la primera publicación. 13. Verificar el flujo completo Modificar una página.\nEjecutar:\ngit add . git commit -m \"Cambios\" git push Comprobar que Netlify publica automáticamente la nueva versión del sitio.",
-    "description": "Objetivo Montar una Raspberry Pi 5 preparada para desarrollar un sitio web con Hugo, administrarla remotamente mediante SSH y publicarla en GitHub y Netlify.\n1. Montar la Raspberry Pi Montar el hardware:\nRaspberry Pi 5 SSD NVMe o microSD HAT (si procede) disipador ventilador caja fuente de alimentación 2. Preparar Windows En el ordenador desde el que se administrará la Raspberry:",
+    "content": "Decomponiendo por partes:",
+    "description": "Decomponiendo por partes:",
     "tags": [],
-    "title": "Flujo de trabajo",
-    "uri": "/flujo_de_trabajo/index.html"
+    "title": "Componentes de una Raspberry Pi 5",
+    "uri": "/componentes/index.html"
   },
   {
     "breadcrumb": "Inicio \u003e SSH",
@@ -40,14 +40,6 @@ var relearn_searchindex = [
     "uri": "/componentes/compos1_vision_general/index.html"
   },
   {
-    "breadcrumb": "Inicio",
-    "content": "Decomponiendo por partes:",
-    "description": "Decomponiendo por partes:",
-    "tags": [],
-    "title": "Componentes de una Raspberry Pi 5",
-    "uri": "/componentes/index.html"
-  },
-  {
     "breadcrumb": "Inicio \u003e Componentes de una Raspberry Pi 5",
     "content": "",
     "description": "",
@@ -64,6 +56,14 @@ var relearn_searchindex = [
     "uri": "/ssh/generar-claves-ssh-iphone-11/index.html"
   },
   {
+    "breadcrumb": "Inicio",
+    "content": "Montaje de la Raspberry Pi 5",
+    "description": "Montaje de la Raspberry Pi 5",
+    "tags": [],
+    "title": "Montaje",
+    "uri": "/montaje/index.html"
+  },
+  {
     "breadcrumb": "Inicio \u003e SSH",
     "content": "Objetivo Copiar la clave pública de un dispositivo (Windows, iPad, iPhone…) a la Raspberry Pi para que posteriormente pueda autorizarse y utilizarse para iniciar sesión mediante SSH.\nRequisitos Raspberry Pi encendida. Servicio SSH funcionando. Disponer de una clave pública (*.pub) en el dispositivo cliente. Cómo cumplir los requisitos ¿Está funcionando SSH? En la Raspberry, abre una terminal y ejecuta:\nsystemctl status ssh Si aparece active (running) El requisito está cumplido.\nSi aparece inactive Inicia el servicio:\nsudo systemctl enable --now ssh ¿Tengo una clave pública? Debe existir un archivo que termine en:\n.pub Por ejemplo:\nid_ed25519.pub Si todavía no lo tienes, consulta el documento correspondiente a tu dispositivo:\nGenerar claves SSH — Windows 10 Generar claves SSH — iPad 11 Generar claves SSH — iPhone 11 Copiar la clave pública Desde Windows Mostrar la clave:\ntype $HOME\\.ssh\\id_ed25519.pub Seleccionar toda la línea y copiarla al portapapeles.\nDesde iPad o iPhone Abrir Termius.\nIr a:\nSettings ↓ Keychain Abrir la clave.\nPulsar:\nCopy Public Key Pegar la clave en la Raspberry Conéctate a la Raspberry mediante SSH utilizando un método que ya funcione (por ejemplo, contraseña o una clave ya autorizada).\nEdita:\nvim ~/.ssh/authorized_keys Pega la clave pública en una línea nueva.\nGuarda el archivo.\nComprobar Muestra el contenido del archivo:\ncat ~/.ssh/authorized_keys Debe aparecer la nueva clave pública.\nProblemas frecuentes No existe authorized_keys Es normal.\nCréalo:\ntouch ~/.ssh/authorized_keys chmod 600 ~/.ssh/authorized_keys He copiado la clave privada La clave privada no debe copiarse nunca a la Raspberry.\nComprueba que el archivo utilizado termina en:\n.pub o que has utilizado la opción Copy Public Key en Termius.",
     "description": "Objetivo Copiar la clave pública de un dispositivo (Windows, iPad, iPhone…) a la Raspberry Pi para que posteriormente pueda autorizarse y utilizarse para iniciar sesión mediante SSH.\nRequisitos Raspberry Pi encendida. Servicio SSH funcionando. Disponer de una clave pública (*.pub) en el dispositivo cliente. Cómo cumplir los requisitos ¿Está funcionando SSH? En la Raspberry, abre una terminal y ejecuta:",
@@ -73,11 +73,11 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Inicio",
-    "content": "Montaje e instalación de la Raspberry Pi 5",
-    "description": "Montaje e instalación de la Raspberry Pi 5",
+    "content": "Objetivo Montar una Raspberry Pi 5 preparada para desarrollar un sitio web con Hugo, administrarla remotamente mediante SSH y publicarla en GitHub y Netlify.\n1. Montar la Raspberry Pi Montar el hardware:\nRaspberry Pi 5 SSD NVMe o microSD HAT (si procede) disipador ventilador caja fuente de alimentación 2. Preparar Windows En el ordenador desde el que se administrará la Raspberry:\nGenerar claves SSH — Windows 10\ninstalar OpenSSH (si es necesario) generar un par de claves SSH Ed25519 Instalar Git Descarga Git desde:\nhttps://git-scm.com/downloads\nAcepta las opciones predeterminadas del instalador.\nComprobar:\ngit --version Instalar Windows Terminal (opcional) Abre Microsoft Store.\nBusca:\nWindows Terminal Pulsa Instalar.\nComprobar:\nwt Instalar Visual Studio Code (opcional) Descarga Visual Studio Code desde:\nhttps://code.visualstudio.com/\nAcepta las opciones predeterminadas del instalador.\nDurante la instalación es recomendable marcar:\nAdd “Open with Code” action Add to PATH Comprobar:\ncode --version Si el comando no funciona, reinicia la sesión de Windows y vuelve a intentarlo.\n3. Instalar Raspberry Pi OS Utilizar Raspberry Pi Imager.\nEn Edit Settings configurar, al menos:\nhostname usuario contraseña SSH autenticación mediante clave pública clave pública generada en Windows Wi-Fi (si procede) zona horaria distribución del teclado. 4. Primer acceso por SSH Desde Windows:\nssh usuario@hostname Comprobar que la autenticación mediante claves funciona correctamente.\n5. Configurar la Raspberry Pi Actualizar el sistema. sudo apt update sudo apt full-upgrade sudo reboot Comprobar: Usuario con permisos sudo groups Debe aparecer:\nsudo Si no aparece:\nsudo usermod -aG sudo \u003cusuario\u003e Cierra la sesión y vuelve a entrar.\nHostname hostname Debe aparecer el nombre elegido durante la instalación, por ejemplo:\nraspi5 Para cambiarlo:\nsudo raspi-config Ir a:\nSystem Options ↓ Hostname Fecha y hora Mostrar la fecha y la hora actuales:\ndate Comprueba que son correctas.\nZona horaria Comprobar la zona horaria Mostrar la configuración:\ntimedatectl Debe aparecer una línea similar a:\nTime zone: Europe/Madrid Para cambiarla:\nsudo raspi-config Ir a:\nLocalisation Options ↓ Timezone Almacenamiento Mostrar los dispositivos de almacenamiento:\nlsblk Mostrar el espacio disponible:\ndf -h Comprueba que:\naparece el SSD NVMe o la microSD esperados; el sistema ha arrancado desde el dispositivo correcto; hay suficiente espacio libre. Conexión a Internet. ping -c 4 google.com Instalar las herramientas básicas: Git Vim Curl Tree etc. sudo apt install -y git vim curl tree xclip 6. Instalar Tailscale en la Raspberry Pi Instalar Tailscale\nIniciar sesión.\nAutorizar el dispositivo.\nComprobar que aparece en la red Tailscale.\n7. Instalar Tailscale en Windows Instalar Tailscale\nIniciar sesión con la misma cuenta.\nComprobar que Windows y la Raspberry Pi pueden verse entre sí.\n8. Configurar Git para GitHub En la Raspberry:\nConfigurar user.name y user.email git config --global user.name \"Tu nombre\" git config --global user.email \"tu@email.com\" Generar un par de claves SSH propio ssh-keygen -t ed25519 -C \"tu@email.com\" Pulsa Enter para aceptar la ubicación por defecto.\nSi no deseas proteger la clave con una contraseña, pulsa Enter dos veces más.\nComprobar:\nls ~/.ssh Debe aparecer, al menos:\nid_ed25519 id_ed25519.pub Añadir la clave pública a GitHub. cat ~/.ssh/id_ed25519.pub | xclip En GitHub:\nSettings ↓ SSH and GPG keys ↓ New SSH key Pega la clave y guarda los cambios.\nComprobar que puede hacerse:\ngit clone git@github.com:... sin solicitar usuario ni contraseña.\n9. Instalar Hugo Descargar e instalar la versión oficial desde GitHub Releases.\nComprobar:\nhugo version 10. Crear el sitio Desde Windows, conectado mediante SSH a la Raspberry:\ncrear el sitio Hugo instalar el tema personalizar la configuración inicial comprobar que el sitio compila correctamente. 11. Crear el repositorio en GitHub Crear un repositorio vacío En GitHub:\nNew repository Introduce un nombre.\nNo marques:\nAdd a README Add .gitignore Choose a license Pulsa Create repository.\nConectar el repositorio local En la Raspberry:\ngit init git branch -M main git remote add origin git@github.com:USUARIO/REPOSITORIO.git Comprobar:\ngit remote -v Realizar el primer commit git add . git commit -m \"Primer commit\" Comprobar:\ngit log --oneline Subir el proyecto git push -u origin main A partir de ahora bastará con:\ngit push 12. Publicar con Netlify conectar Netlify con GitHub seleccionar el repositorio configurar el despliegue realizar la primera publicación. 13. Verificar el flujo completo Modificar una página.\nEjecutar:\ngit add . git commit -m \"Cambios\" git push Comprobar que Netlify publica automáticamente la nueva versión del sitio.",
+    "description": "Objetivo Montar una Raspberry Pi 5 preparada para desarrollar un sitio web con Hugo, administrarla remotamente mediante SSH y publicarla en GitHub y Netlify.\n1. Montar la Raspberry Pi Montar el hardware:\nRaspberry Pi 5 SSD NVMe o microSD HAT (si procede) disipador ventilador caja fuente de alimentación 2. Preparar Windows En el ordenador desde el que se administrará la Raspberry:",
     "tags": [],
-    "title": "Instalación",
-    "uri": "/instalacion/index.html"
+    "title": "Flujo de trabajo",
+    "uri": "/flujo_de_trabajo/index.html"
   },
   {
     "breadcrumb": "Inicio \u003e Tailscale",
@@ -112,14 +112,6 @@ var relearn_searchindex = [
     "uri": "/tailscale/instalar-tailscale-raspberry-pi-5/index.html"
   },
   {
-    "breadcrumb": "Inicio",
-    "content": "QUÉ ES SSH (Secure Shell) es un protocolo.**\nUn protocolo es un sistema de normas que regulan la comunicación entre dos o más sistemas.\nPermite CONECTARSE DE FORMA SEGURA A OTRO ORDENADOR a través de una red para administrarlo como si estuvieras delante de él.\nCon SSH puedes:\niniciar sesión en otro equipo; ejecutar comandos; copiar archivos; administrar el sistema de forma remota. SSH cifra toda la comunicación entre ambos equipos, de modo que nadie puede leer ni modificar los datos durante la conexión.\nEn esta documentación, SSH se utilizará para acceder a la Raspberry Pi desde un ordenador, una tablet o un teléfono móvil.",
-    "description": "QUÉ ES SSH (Secure Shell) es un protocolo.**\nUn protocolo es un sistema de normas que regulan la comunicación entre dos o más sistemas.\nPermite CONECTARSE DE FORMA SEGURA A OTRO ORDENADOR a través de una red para administrarlo como si estuvieras delante de él.\nCon SSH puedes:\niniciar sesión en otro equipo; ejecutar comandos; copiar archivos; administrar el sistema de forma remota. SSH cifra toda la comunicación entre ambos equipos, de modo que nadie puede leer ni modificar los datos durante la conexión.",
-    "tags": [],
-    "title": "SSH",
-    "uri": "/ssh/index.html"
-  },
-  {
     "breadcrumb": "Inicio \u003e Componentes de una Raspberry Pi 5",
     "content": "",
     "description": "",
@@ -145,11 +137,11 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "Inicio",
-    "content": "QUÉ ES Tailscale es un programa.\nEs un programa que CONECTA DE FORMA SEGURA tus dispositivos (ordenador, Raspberry Pi, móvil, tablet…) a través de Internet.\nPara que puedan comunicarse entre sí como si estuvieran conectados al mismo router de casa, aunque cada uno esté en un lugar distinto.\nDicho en lenguaje técnico:\nTailscale es una VPN de malla (mesh VPN) que crea una red privada segura entre tus dispositivos a través de Internet.\nEn pocas palabras:\nHace que ordenadores, móviles y servidores se comporten como si estuvieran en la misma red local, aunque estén en lugares distintos, sin necesidad de abrir puertos ni configurar el router.\nPor ejemplo, con Tailscale puedes hacer desde cualquier lugar:\nssh usuario@raspi como si la Raspberry estuviera conectada al mismo Wi-Fi que tu ordenador.",
-    "description": "QUÉ ES Tailscale es un programa.\nEs un programa que CONECTA DE FORMA SEGURA tus dispositivos (ordenador, Raspberry Pi, móvil, tablet…) a través de Internet.\nPara que puedan comunicarse entre sí como si estuvieran conectados al mismo router de casa, aunque cada uno esté en un lugar distinto.\nDicho en lenguaje técnico:\nTailscale es una VPN de malla (mesh VPN) que crea una red privada segura entre tus dispositivos a través de Internet.",
+    "content": "QUÉ ES SSH (Secure Shell) es un protocolo.**\nUn protocolo es un sistema de normas que regulan la comunicación entre dos o más sistemas.\nPermite CONECTARSE DE FORMA SEGURA A OTRO ORDENADOR a través de una red para administrarlo como si estuvieras delante de él.\nCon SSH puedes:\niniciar sesión en otro equipo; ejecutar comandos; copiar archivos; administrar el sistema de forma remota. SSH cifra toda la comunicación entre ambos equipos, de modo que nadie puede leer ni modificar los datos durante la conexión.\nEn esta documentación, SSH se utilizará para acceder a la Raspberry Pi desde un ordenador, una tablet o un teléfono móvil.",
+    "description": "QUÉ ES SSH (Secure Shell) es un protocolo.**\nUn protocolo es un sistema de normas que regulan la comunicación entre dos o más sistemas.\nPermite CONECTARSE DE FORMA SEGURA A OTRO ORDENADOR a través de una red para administrarlo como si estuvieras delante de él.\nCon SSH puedes:\niniciar sesión en otro equipo; ejecutar comandos; copiar archivos; administrar el sistema de forma remota. SSH cifra toda la comunicación entre ambos equipos, de modo que nadie puede leer ni modificar los datos durante la conexión.",
     "tags": [],
-    "title": "Tailscale",
-    "uri": "/tailscale/index.html"
+    "title": "SSH",
+    "uri": "/ssh/index.html"
   },
   {
     "breadcrumb": "Inicio \u003e Componentes de una Raspberry Pi 5",
@@ -168,6 +160,14 @@ var relearn_searchindex = [
     "uri": "/tailscale/instalar-tailscale-iphone-11/index.html"
   },
   {
+    "breadcrumb": "Inicio",
+    "content": "QUÉ ES Tailscale es un programa.\nEs un programa que CONECTA DE FORMA SEGURA tus dispositivos (ordenador, Raspberry Pi, móvil, tablet…) a través de Internet.\nPara que puedan comunicarse entre sí como si estuvieran conectados al mismo router de casa, aunque cada uno esté en un lugar distinto.\nDicho en lenguaje técnico:\nTailscale es una VPN de malla (mesh VPN) que crea una red privada segura entre tus dispositivos a través de Internet.\nEn pocas palabras:\nHace que ordenadores, móviles y servidores se comporten como si estuvieran en la misma red local, aunque estén en lugares distintos, sin necesidad de abrir puertos ni configurar el router.\nPor ejemplo, con Tailscale puedes hacer desde cualquier lugar:\nssh usuario@raspi como si la Raspberry estuviera conectada al mismo Wi-Fi que tu ordenador.",
+    "description": "QUÉ ES Tailscale es un programa.\nEs un programa que CONECTA DE FORMA SEGURA tus dispositivos (ordenador, Raspberry Pi, móvil, tablet…) a través de Internet.\nPara que puedan comunicarse entre sí como si estuvieran conectados al mismo router de casa, aunque cada uno esté en un lugar distinto.\nDicho en lenguaje técnico:\nTailscale es una VPN de malla (mesh VPN) que crea una red privada segura entre tus dispositivos a través de Internet.",
+    "tags": [],
+    "title": "Tailscale",
+    "uri": "/tailscale/index.html"
+  },
+  {
     "breadcrumb": "Inicio \u003e Componentes de una Raspberry Pi 5",
     "content": "",
     "description": "",
@@ -182,6 +182,14 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Comunicaciones",
     "uri": "/componentes/compos8_comunicaciones/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "1. Montar la Raspberry Pi Montar el hardware:\nRaspberry Pi 5 SSD NVMe o microSD HAT (si procede) disipador ventilador caja fuente de alimentación",
+    "description": "1. Montar la Raspberry Pi Montar el hardware:\nRaspberry Pi 5 SSD NVMe o microSD HAT (si procede) disipador ventilador caja fuente de alimentación",
+    "tags": [],
+    "title": "1. Montar la Raspberry Pi",
+    "uri": "/flujo_de_trabajo/f_1_montar_la_raspberry_pi/index.html"
   },
   {
     "breadcrumb": "Inicio \u003e Componentes de una Raspberry Pi 5",
@@ -206,6 +214,110 @@ var relearn_searchindex = [
     "tags": [],
     "title": "Almacenamiento",
     "uri": "/componentes/compos11_almacenamiento/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "2. Preparar Windows En el ordenador desde el que se administrará la Raspberry:\nGenerar claves SSH — Windows 10\ninstalar OpenSSH (si es necesario) generar un par de claves SSH Ed25519 Instalar Git Descarga Git desde:\nhttps://git-scm.com/downloads\nAcepta las opciones predeterminadas del instalador.\nComprobar:\ngit --version Instalar Windows Terminal (opcional) Abre Microsoft Store.\nBusca:\nWindows Terminal Pulsa Instalar.\nComprobar:\nwt Instalar Visual Studio Code (opcional) Descarga Visual Studio Code desde:\nhttps://code.visualstudio.com/\nAcepta las opciones predeterminadas del instalador.\nDurante la instalación es recomendable marcar:\nAdd “Open with Code” action Add to PATH Comprobar:\ncode --version Si el comando no funciona, reinicia la sesión de Windows y vuelve a intentarlo.",
+    "description": "2. Preparar Windows En el ordenador desde el que se administrará la Raspberry:\nGenerar claves SSH — Windows 10\ninstalar OpenSSH (si es necesario) generar un par de claves SSH Ed25519 Instalar Git Descarga Git desde:\nhttps://git-scm.com/downloads\nAcepta las opciones predeterminadas del instalador.",
+    "tags": [],
+    "title": "2. Preparar Windows",
+    "uri": "/flujo_de_trabajo/f_2_preparar_windows/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "3. Instalar Raspberry Pi OS Utilizar Raspberry Pi Imager.\nEn Edit Settings configurar, al menos:\nhostname usuario contraseña SSH autenticación mediante clave pública clave pública generada en Windows Wi-Fi (si procede) zona horaria distribución del teclado.",
+    "description": "3. Instalar Raspberry Pi OS Utilizar Raspberry Pi Imager.\nEn Edit Settings configurar, al menos:\nhostname usuario contraseña SSH autenticación mediante clave pública clave pública generada en Windows Wi-Fi (si procede) zona horaria distribución del teclado.",
+    "tags": [],
+    "title": "3. Instalar Raspberry Pi OS",
+    "uri": "/flujo_de_trabajo/f_3_instalar_raspberry_pi_os/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "4. Primer acceso por SSH Desde Windows:\nssh usuario@hostname Comprobar que la autenticación mediante claves funciona correctamente.",
+    "description": "4. Primer acceso por SSH Desde Windows:\nssh usuario@hostname Comprobar que la autenticación mediante claves funciona correctamente.",
+    "tags": [],
+    "title": "4. Primer acceso por SSH",
+    "uri": "/flujo_de_trabajo/f_4_primer_acceso_por_ssh/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "5. Configurar la Raspberry Pi Actualizar el sistema. sudo apt update sudo apt full-upgrade sudo reboot Comprobar: Usuario con permisos sudo groups Debe aparecer:\nsudo Si no aparece:\nsudo usermod -aG sudo \u003cusuario\u003e Cierra la sesión y vuelve a entrar.\nHostname hostname Debe aparecer el nombre elegido durante la instalación, por ejemplo:\nraspi5 Para cambiarlo:\nsudo raspi-config Ir a:\nSystem Options ↓ Hostname Fecha y hora Mostrar la fecha y la hora actuales:\ndate Comprueba que son correctas.\nZona horaria",
+    "description": "5. Configurar la Raspberry Pi Actualizar el sistema. sudo apt update sudo apt full-upgrade sudo reboot Comprobar: Usuario con permisos sudo groups Debe aparecer:\nsudo Si no aparece:\nsudo usermod -aG sudo \u003cusuario\u003e Cierra la sesión y vuelve a entrar.",
+    "tags": [],
+    "title": "5. Configurar la Raspberry Pi",
+    "uri": "/flujo_de_trabajo/f_5_configurar_la_raspberry_pi/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "Comprobar la zona horaria Mostrar la configuración:\ntimedatectl Debe aparecer una línea similar a:\nTime zone: Europe/Madrid Para cambiarla:\nsudo raspi-config Ir a:\nLocalisation Options ↓ Timezone Almacenamiento Mostrar los dispositivos de almacenamiento:\nlsblk Mostrar el espacio disponible:\ndf -h Comprueba que:\naparece el SSD NVMe o la microSD esperados; el sistema ha arrancado desde el dispositivo correcto; hay suficiente espacio libre. Conexión a Internet. ping -c 4 google.com Instalar las herramientas básicas: Git Vim Curl Tree etc. sudo apt install -y git vim curl tree xclip",
+    "description": "Comprobar la zona horaria Mostrar la configuración:\ntimedatectl Debe aparecer una línea similar a:\nTime zone: Europe/Madrid Para cambiarla:\nsudo raspi-config Ir a:\nLocalisation Options ↓ Timezone Almacenamiento Mostrar los dispositivos de almacenamiento:\nlsblk Mostrar el espacio disponible:\ndf -h Comprueba que:\naparece el SSD NVMe o la microSD esperados; el sistema ha arrancado desde el dispositivo correcto; hay suficiente espacio libre. Conexión a Internet. ping -c 4 google.com Instalar las herramientas básicas: Git Vim Curl Tree etc. sudo apt install -y git vim curl tree xclip",
+    "tags": [],
+    "title": "Comprobar la zona horaria",
+    "uri": "/flujo_de_trabajo/f_comprobar_la_zona_horaria/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "6. Instalar Tailscale en la Raspberry Pi Instalar Tailscale\nIniciar sesión.\nAutorizar el dispositivo.\nComprobar que aparece en la red Tailscale.",
+    "description": "6. Instalar Tailscale en la Raspberry Pi Instalar Tailscale\nIniciar sesión.\nAutorizar el dispositivo.\nComprobar que aparece en la red Tailscale.",
+    "tags": [],
+    "title": "6. Instalar Tailscale en la Raspberry Pi",
+    "uri": "/flujo_de_trabajo/f_6_instalar_tailscale_en_la_raspberry_pi/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "7. Instalar Tailscale en Windows Instalar Tailscale\nIniciar sesión con la misma cuenta.\nComprobar que Windows y la Raspberry Pi pueden verse entre sí.",
+    "description": "7. Instalar Tailscale en Windows Instalar Tailscale\nIniciar sesión con la misma cuenta.\nComprobar que Windows y la Raspberry Pi pueden verse entre sí.",
+    "tags": [],
+    "title": "7. Instalar Tailscale en Windows",
+    "uri": "/flujo_de_trabajo/f_7_instalar_tailscale_en_windows/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "8. Configurar Git para GitHub En la Raspberry:\nConfigurar user.name y user.email git config --global user.name \"Tu nombre\" git config --global user.email \"tu@email.com\" Generar un par de claves SSH propio ssh-keygen -t ed25519 -C \"tu@email.com\" Pulsa Enter para aceptar la ubicación por defecto.\nSi no deseas proteger la clave con una contraseña, pulsa Enter dos veces más.\nComprobar:\nls ~/.ssh Debe aparecer, al menos:\nid_ed25519 id_ed25519.pub Añadir la clave pública a GitHub. cat ~/.ssh/id_ed25519.pub | xclip En GitHub:\nSettings ↓ SSH and GPG keys ↓ New SSH key Pega la clave y guarda los cambios.\nComprobar que puede hacerse:\ngit clone git@github.com:... sin solicitar usuario ni contraseña.",
+    "description": "8. Configurar Git para GitHub En la Raspberry:\nConfigurar user.name y user.email git config --global user.name \"Tu nombre\" git config --global user.email \"tu@email.com\" Generar un par de claves SSH propio ssh-keygen -t ed25519 -C \"tu@email.com\" Pulsa Enter para aceptar la ubicación por defecto.\nSi no deseas proteger la clave con una contraseña, pulsa Enter dos veces más.",
+    "tags": [],
+    "title": "8. Configurar Git para GitHub",
+    "uri": "/flujo_de_trabajo/f_8_configurar_git_para_github/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "9. Instalar Hugo Descargar e instalar la versión oficial desde GitHub Releases.\nComprobar:\nhugo version",
+    "description": "9. Instalar Hugo Descargar e instalar la versión oficial desde GitHub Releases.\nComprobar:\nhugo version",
+    "tags": [],
+    "title": "9. Instalar Hugo",
+    "uri": "/flujo_de_trabajo/f_9_instalar_hugo/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "10. Crear el sitio Desde Windows, conectado mediante SSH a la Raspberry:\ncrear el sitio Hugo instalar el tema personalizar la configuración inicial comprobar que el sitio compila correctamente.",
+    "description": "10. Crear el sitio Desde Windows, conectado mediante SSH a la Raspberry:\ncrear el sitio Hugo instalar el tema personalizar la configuración inicial comprobar que el sitio compila correctamente.",
+    "tags": [],
+    "title": "10. Crear el sitio",
+    "uri": "/flujo_de_trabajo/f_10_crear_el_sitio/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "11. Crear el repositorio en GitHub Crear un repositorio vacío En GitHub:\nNew repository Introduce un nombre.\nNo marques:\nAdd a README Add .gitignore Choose a license Pulsa Create repository.\nConectar el repositorio local En la Raspberry:\ngit init git branch -M main git remote add origin git@github.com:USUARIO/REPOSITORIO.git Comprobar:\ngit remote -v Realizar el primer commit git add . git commit -m \"Primer commit\" Comprobar:\ngit log --oneline Subir el proyecto git push -u origin main A partir de ahora bastará con:\ngit push",
+    "description": "11. Crear el repositorio en GitHub Crear un repositorio vacío En GitHub:\nNew repository Introduce un nombre.\nNo marques:\nAdd a README Add .gitignore Choose a license Pulsa Create repository.\nConectar el repositorio local En la Raspberry:",
+    "tags": [],
+    "title": "11. Crear el repositorio en GitHub",
+    "uri": "/flujo_de_trabajo/f_11_crear_el_repositorio_en_github/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "12. Publicar con Netlify conectar Netlify con GitHub seleccionar el repositorio configurar el despliegue realizar la primera publicación.",
+    "description": "12. Publicar con Netlify conectar Netlify con GitHub seleccionar el repositorio configurar el despliegue realizar la primera publicación.",
+    "tags": [],
+    "title": "12. Publicar con Netlify",
+    "uri": "/flujo_de_trabajo/f_12_publicar_con_netlify/index.html"
+  },
+  {
+    "breadcrumb": "Inicio \u003e Flujo de trabajo",
+    "content": "13. Verificar el flujo completo Modificar una página.\nEjecutar:\ngit add . git commit -m \"Cambios\" git push Comprobar que Netlify publica automáticamente la nueva versión del sitio.",
+    "description": "13. Verificar el flujo completo Modificar una página.\nEjecutar:\ngit add . git commit -m \"Cambios\" git push Comprobar que Netlify publica automáticamente la nueva versión del sitio.",
+    "tags": [],
+    "title": "13. Verificar el flujo completo",
+    "uri": "/flujo_de_trabajo/f_13_verificar_el_flujo_completo/index.html"
   },
   {
     "breadcrumb": "Inicio",

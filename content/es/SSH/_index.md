@@ -1,6 +1,6 @@
 ---
 title: "SSH"
-weight: 5
+weight: 6
 ---
 # QUÉ ES
 
