@@ -134,7 +134,20 @@ ping -c 4 google.com
 - etc.
 
 ```bash
-sudo apt install -y git vim curl tree xclip terminator
+sudo apt install -y git vim-gtk3 curl tree xclip terminator
+```
+
+Comprobar Vim:
+
+```bash
+vim --version | grep clipboard
+```
+
+Debe salir algo como: 
+
+```text
++clipboard
++xterm_clipboard
 ```
 
 ---
