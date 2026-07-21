@@ -134,7 +134,7 @@ ping -c 4 google.com
 - etc.
 
 ```bash
-sudo apt install -y git vim-gtk3 curl tree xclip terminator
+sudo apt install -y git vim-gtk3 curl tree xclip terminator zip unzip
 ```
 
 Comprobar Vim:
@@ -149,5 +149,11 @@ Debe salir algo como:
 +clipboard
 +xterm_clipboard
 ```
+8. Scripts básicas
+
+{{% button href="/downloads/basicos.zip" icon="download" %}}
+Descargar archivos
+{{% /button %}}
+
 
 ---
